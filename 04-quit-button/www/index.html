@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>終了ボタン</title>
+</head>
+<body>
+<button onclick="quit()">Quit</button>
+<p id="quit-message" style="display: none">終了中です</p>
+</body>
+<script>
+    function rerender() {
+        if (window.messageHidden) {
+            document.getElementById("quit-message").style.display = "none"
+        } else {
+            document.getElementById("quit-message").style.display = "block"
+        }
+    }
+</script>
+</html>
