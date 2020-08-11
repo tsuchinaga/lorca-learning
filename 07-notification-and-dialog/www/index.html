@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>デスクトップ通知とダイアログ</title>
+</head>
+<body>
+
+<h1>デスクトップ通知とダイアログ</h1>
+
+<section>
+    <h2>デスクトップ通知</h2>
+    <button onclick="notifyMe()">デスクトップ通知</button>
+
+    <h2>アラートダイアログ</h2>
+    <button onclick="alert(`やっほー`)">アラート</button>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!Notification) {
+            alert('Desktop notifications not available in your browser. Try Chromium.');
+            return;
+        }
+
+        if (Notification.permission !== 'granted')
+            Notification.requestPermission();
+    });
+
+    function notifyMe() {
+        if (Notification.permission !== 'granted')
+            Notification.requestPermission();
+        else {
+            new Notification('デスクトップ通知', {
+                icon: './img/f_f_object_170_s512_f_object_170_2nbg.png',
+                body: `デスクトップ通知を出してるよ～`,
+            });
+        }
+    }
+</script>
+</body>
+</html>
