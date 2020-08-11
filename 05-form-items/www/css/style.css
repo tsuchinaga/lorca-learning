@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.form-head {
+    width: 15vw;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: rgb(240, 240, 200);
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+}
+
+.form-body {
+    width: 40vw;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 1em;
+}
+
+.form-body > input, .form-body > textarea {
+    padding: .5em;
+    width: calc(100% - 1em);
+}

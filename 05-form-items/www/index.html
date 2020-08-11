@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="horizontal">
+    <div class="form-head"><label for="input-line">1行</label></div>
+    <div class="form-body"><input id="input-line" type="text"></div>
+</div>
+
+<div class="horizontal">
+    <div class="form-head"><label for="multiple-line">複数行</label></div>
+    <div class="form-body"><textarea id="multiple-line" rows="5"></textarea></div>
+</div>
+
+<div class="horizontal">
+    <div class="form-head"><label for="password-line">パスワード</label></div>
+    <div class="form-body"><input id="password-line" type="password"></div>
+</div>
+
+<div class="horizontal">
+    <div class="form-head">ラジオボタン</div>
+    <div class="form-body vertical">
+        <label><input type="radio" name="radio-button" value="1"> いちご</label>
+        <label><input type="radio" name="radio-button" value="2"> りんご</label>
+        <label><input type="radio" name="radio-button" value="3"> ぶどう</label>
+    </div>
+</div>
+
+<div class="horizontal">
+    <div class="form-head">チェックボックス</div>
+    <div class="form-body vertical">
+        <label><input type="checkbox" name="check-box-1" value="on"> たまねぎ</label>
+        <label><input type="checkbox" name="check-box-1" value="on"> にんにく</label>
+        <label><input type="checkbox" name="check-box-1" value="on"> しょうが</label>
+        <label><input type="checkbox" name="check-box-1" value="on"> 鶏もも肉</label>
+        <label><input type="checkbox" name="check-box-1" value="on"> ヨーグルト</label>
+    </div>
+</div>
+
+<div class="horizontal">
+    <div class="form-head"><label for="select-box">セレクトボックス</label></div>
+    <div class="form-body vertical">
+        <select id="select-box">
+            <option value="T">東証</option>
+            <option value="O">大証</option>
+            <option value="M">名証</option>
+            <option value="F">福証</option>
+            <option value="S">札証</option>
+        </select>
+    </div>
+</div>
+
+</body>
+</html>

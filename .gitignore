@@ -1,3 +1,5 @@
 ### for IntelliJ
 .idea
 *.iml
+
+**/assets/*.go
