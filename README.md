@@ -12,6 +12,7 @@ lorcaでいろいろためしてみる
 * [ページ遷移](06-page-transition)
 * [デスクトップ通知とダイアログ](07-notification-and-dialog)
 * [リソースの埋め込み](08-embed-resources)
+* [ビルド](09-build)
 
 ## まとめはこっち
 [lorcaでいろいろやってみるよー - tsuchinaga](https://scrapbox.io/tsuchinaga/lorca%E3%81%A7%E3%81%84%E3%82%8D%E3%81%84%E3%82%8D%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B%E3%82%88%E3%83%BC)
